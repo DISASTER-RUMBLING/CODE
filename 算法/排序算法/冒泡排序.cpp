@@ -11,10 +11,15 @@ void Swap(int* x, int* y) {
 
 int* Bubble_Sort(int* arr, int begin, int end) {
 	for (int i = 0; i < (end - begin); i++) {
+		int flag = 1;
 		for (int j = begin; j < end - i - 1; j++) {
 			if (arr[j] > arr[j + 1]) {
 				Swap(&arr[j], &arr[j + 1]);
+				flag = 0;
 			}
+		}
+		if (flag) {
+			break;
 		}
 	}
 	return arr;

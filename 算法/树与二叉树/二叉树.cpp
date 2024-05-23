@@ -129,5 +129,6 @@ void Free(tree* p) {
 	}
 	Free(p->bro);
 	Free(p->kid);
+	free(p);
 	return;
 }

@@ -5,7 +5,7 @@
 using namespace std;
 
 bool Check(int*  chnum, char now) {
-	for (int i = 1; i < (int)(now - 'a'); i++) {
+	for (int i = 0; i < (int)(now - 'a'); i++) {
 		if (chnum[i]) {
 			return true;
 		}
